@@ -38,7 +38,7 @@ var myChart = new Chart(ctx, {
                 }
             }]
         },
-        maintainAspectRatio: true
+        maintainAspectRatio: false
     }
 });
 
@@ -74,7 +74,7 @@ var myChart = new Chart(ctx0, {
                 }
             }]
         },
-        maintainAspectRatio: true
+        maintainAspectRatio: false
     }
 });
 
@@ -110,7 +110,7 @@ var myChart = new Chart(ctx2, {
                 }
             }]
         },
-        maintainAspectRatio: true
+        maintainAspectRatio: false
     }
 });
 
@@ -144,7 +144,7 @@ var myChart = new Chart(ctx3, {
                 }
             }]
         },
-        maintainAspectRatio: true
+        maintainAspectRatio: false
     }
 });
 
@@ -178,6 +178,6 @@ var myChart = new Chart(ctx4, {
                 }
             }]
         },
-        maintainAspectRatio: true
+        maintainAspectRatio: false
     }
 });
