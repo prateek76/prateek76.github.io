@@ -34,6 +34,9 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+        legend: {
+            display: false
+         },
         scales: {
           xAxes: [{
             barPercentage: 0.2
