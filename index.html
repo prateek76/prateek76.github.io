@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Prateek</title>
+
+<head>
+  <!-- minify -->
+  <link href="https://unpkg.com/nes.css@2.2.0/css/nes.min.css" rel="stylesheet" />
+  <!-- latest -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- core style only -->
+  <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+
+  <style>
+    html,
+    body,
+    pre,
+    code,
+    kbd,
+    samp,
+    h1,
+    h2,
+    h3 {
+      font-family: "Press Start 2P" !important;
+    }
+  </style>
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3css/w3css.css">
@@ -10,59 +35,243 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+
 <body style="overflow-x: hidden">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-card w3-left-align w3-large" style="background: #f3f3f3 !important">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Portfolio</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-left-align w3-large" style="background: #f3f3f3 !important">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Portfolio</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    </div>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px;background: #1E1E1E!important">
+    <h1 style="color: #fff;">Portfolio</h1>
+    <h2 style="color: #fff">Prateek</h2>
+    <a href="./Prateek.pdf"><button class="nes-btn is-primary">Resume</button></a>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container" style="background: #fff!important">
+    <div class="w3-content">
+      <div class="nes-container with-title">
+        <p class="title">About me</p>
+        <p>Hi, My name is Prateek. I am a third-year undergraduate at IIIT Allahabad, India. Currently, I am
+          pursuing a degree in electronics and communication Engineering. I love to code and develop applications that
+          are fun or impactful. Apart from coding, I am interested in Competitive coding on online platforms like
+          hackerearth, codeforces, and codechef.</p>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- Header -->
-<header class="w3-container w3-center" style="padding:128px 16px;background: #1abc9c!important">
-  <h1 class="w3-margin w3-jumbo" style="color: #fff;">Portfolio</h1>
-  <h2 style="color: #fff">Prateek</h2>
-  <a href="https://drive.google.com/open?id=1sufkNptlzE_M6aEkMzrhYzOEcXSohgZo"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Resume</button></a>
-</header>
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container" style="background: #fff!important">
+    <div class="w3-content">
+      <section class="nes-container with-title">
+        <h1 class="title">Work Experience</h1>
+        <div class="item" id="containers">
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Winter Intern at Live Ombre</p>
+            <i class="nes-icon coin is-small"></i> Worked on making responsive frontend and optimized javascript code in
+            frontend.<br><br>
+            <i class="nes-icon coin is-small"></i> Used firebase as a database to store the state of the user and
+            implemented Facebook and Instagram login.<br><br>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" style="background: #fff!important">
-  <div class="w3-content">
-      <h3 class="w3-padding-32">Hi! I am Prateek, a second year undergraduate student at IIIT, Allahabad. I love technology and building things with it. Here you can find some of the projects/work done by me. You can help me by contributing to it on GitHub.</h3>
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">HTML/CSS</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">NodeJS</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">Firebase</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Summer Intern 2019 at Examination Warrior</p>
+            <i class="nes-icon coin is-small"></i> Made online test series and Quiz creator with ReactJS for exams like
+            UPSC, Jee and other exams of India.<br><br>
+            <i class="nes-icon coin is-small"></i> Wrote Excel to JSON API to convert an Excel sheet and integrated
+            various API with frontend.<br><br>
+            <i class="nes-icon coin is-small"></i> Worked on complete Analytics in the result section, after test series
+            is finished.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">ReactJS</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">NodeJS</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">NodeJS</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Member - Web Development Wing, GeekHaven</p>
+            <i class="nes-icon coin is-small"></i> Geekhaven is a technical society of IIIT Allahabad.
+            <br><br>
+            <i class="nes-icon coin is-small"></i> Developed portal and sites for students community, conducted
+            workshops for freshmen.
+            <br><br>
+            <i class="nes-icon coin is-small"></i> Made Leave application portal which will reduce paper work included
+            in the process.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">HTML/CSS</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">PHP</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">JS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-  <div class="w3-xlarge w3-padding-32">
-    <a href="https://www.facebook.com/prateek.17.xx.1999"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://github.com/prateek76"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/prateek-prateek-4aa268164/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
- </div>
-</footer>
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container" style="background: #fff!important">
+    <div class="w3-content">
+      <section class="nes-container with-title">
+        <h1 class="title">My Projects</h1>
+        <div class="item" id="containers">
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Hoy Messenger</p>
+            <i class="nes-icon coin is-small"></i> Built a Realtime chat web application using ratchet with group chat
+            and multimedia sharing facility.<br><br>
+            <i class="nes-icon coin is-small"></i> Built a Chat application for Android with Cordova framework using JS
+            and then switched it to
+            React-Native.<br><br>
+            <i class="nes-icon coin is-small"></i> Built chat application for Linux terminal for secure chatting.
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">React</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">Cordova</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">PHP</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Slim Social Network</p>
+            <i class="nes-icon coin is-small"></i> Built a small social network with PHP slim Framework with high order
+            security.<br><br>
+            <i class="nes-icon coin is-small"></i> Made features like sending friend requests, sending messages, and
+            story posting.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">Slim</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">PHP</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Third Eye</p>
+            <i class="nes-icon coin is-small"></i> Used Azure Face recognition API for getting unique face ID and
+            storing it in the database.<br><br>
+            <i class="nes-icon coin is-small"></i> Made features like adding of batches, adding of students and making
+            attendance.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">Azure</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">PHP</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Blowrage</p>
+            <i class="nes-icon coin is-small"></i> Designed and Developed a racing game with Unity for Github game off
+            2018 which is available for all major
+            platforms.<br><br>
+            <i class="nes-icon coin is-small"></i> Published it on google play store and submitted for GitHub game off
+            2018.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">Unity3D</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Wallon</p>
+            <i class="nes-icon coin is-small"></i> Built a Wallet manager app which helps to manage the expenditure of
+            money, also published on play store.<br><br>
+            <i class="nes-icon coin is-small"></i> Used React Native to develop the application for Android, made
+            features to add users from contacts.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">React</span>
+              </a>
+              <a href="#" class="nes-badge">
+                <span class="is-dark">Es6</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 17px" class="nes-container with-title">
+            <p class="title">Rebound News Extension</p>
+            <i class="nes-icon coin is-small"></i> Built a chrome extension for showing top 10 current news while
+            browsing, also published it on chrome store
+            .<br><br>
+            <i class="nes-icon coin is-small"></i> Used Free News API to fetch the news across the world and rendered
+            using jquery in frontend.
+            <div style="margin-top: 10px">
+              <a href="#" class="nes-badge">
+                <span class="is-dark">JS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <h3 style="text-align: center">Find more projects on <a href="https://github.com/prateek76"><i
+        class="nes-octocat animate"></i></a> </h3>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+      <a href="https://www.facebook.com/prateek.17.xx.1999"><i class="nes-icon facebook is-medium"></i></a>
+      <a href="https://github.com/prateek76"><i class="nes-icon github is-medium"></i></a>
+      <a href="https://www.linkedin.com/in/prateek-4aa268164/"><i class="nes-icon linkedin is-medium"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else {
+      } else {
         x.className = x.className.replace(" w3-show", "");
+      }
     }
-}
-</script>
-<script src="js/chartcontroller.js"></script>
+  </script>
+  <script src="js/chartcontroller.js"></script>
 </body>
+
 </html>
